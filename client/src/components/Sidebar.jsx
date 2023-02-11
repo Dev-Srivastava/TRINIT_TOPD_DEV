@@ -19,14 +19,7 @@ import {
   HomeOutlined,
   ShoppingCartOutlined,
   Groups2Outlined,
-  ReceiptLongOutlined,
-  PublicOutlined,
-  PointOfSaleOutlined,
-  TodayOutlined,
-  CalendarMonthOutlined,
   AdminPanelSettingsOutlined,
-  TrendingUpOutlined,
-  PieChartOutlined,
 } from "@mui/icons-material";
 import { useEffect, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
@@ -35,46 +28,31 @@ import profileImage from "assets/profile.jpeg";
 
 const navItems = [
   {
-    text: "Dashboard",
+    text: "HomePage",
     icon: <HomeOutlined />,
   },
-//   {
-//     text: "Client Facing",
-//     icon: null,
-//   },
-//   {
-//     text: "Products",
-//     icon: <ShoppingCartOutlined />,
-//   },
+  {
+    text: "Features",
+    icon: null,
+  },
+  {
+    text: "Rankings",
+    icon: <ShoppingCartOutlined />,
+  },
+  {
+    text: "Calculate",
+    icon: <Groups2Outlined />,
+  },
 
+  {
+    text: "Team TopD",
+    icon: null,
+  },
+  {
+    text: "About",
+    icon: <AdminPanelSettingsOutlined />,
+  },
 
-//   {
-//     text: "Geography",
-//     icon: <PublicOutlined />,
-//   },
-
-//   {
-//     text: "Overview",
-//     icon: <PointOfSaleOutlined />,
-//   },
-//   {
-//     text: "Daily",
-//     icon: <TodayOutlined />,
-//   },
-
-//   {
-//     text: "Breakdown",
-//     icon: <PieChartOutlined />,
-//   },
-// 
-//   {
-//     text: "Admin",
-//     icon: <AdminPanelSettingsOutlined />,
-//   },
-//   {
-//     text: "Performance",
-//     icon: <TrendingUpOutlined />,
-//   },
 ];
 
 const Sidebar = ({
@@ -117,7 +95,7 @@ const Sidebar = ({
               <FlexBetween color={theme.palette.secondary.main}>
                 <Box display="flex" alignItems="center" gap="0.5rem">
                   <Typography variant="h4" fontWeight="bold">
-                    TEMP_NAME
+                    TEMPNAME
                   </Typography>
                 </Box>
                 {!isNonMobile && (
