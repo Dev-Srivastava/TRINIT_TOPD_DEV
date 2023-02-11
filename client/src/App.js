@@ -5,7 +5,7 @@ import { useSelector } from "react-redux";
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import { themeSettings } from "theme";
 import Layout from "scenes/layout";
-import Dashboard from "scenes/dashboard";
+import Homepage from "scenes/homepage";
 import Rankings from "scenes/rankings";
 import Calculate from "scenes/calculate";
 import About from "scenes/about";
@@ -21,7 +21,7 @@ function App() {
           <Routes>
             <Route element={<Layout />}>
               <Route path="/" element={<Navigate to="/dashboard" replace />} />
-              <Route path="/dashboard" element={<Dashboard />} />
+              <Route path="/homepage" element={<Homepage />} />
               <Route path="/rankings" element={<Rankings />} />
               <Route path="/calculate" element={<Calculate />} />
               <Route path="/about" element={<About />} />

@@ -3,7 +3,7 @@ import { Box, useTheme } from "@mui/material";
 import { DataGrid } from "@mui/x-data-grid";
 import { useGetTransactionsQuery } from "state/api";
 import Header from "components/Header";
-import { Button, TextField, InputAdornment } from "@mui/material";
+import { Button, TextField, InputAdornment,Typography } from "@mui/material";
 import DataGridCustomToolbar from "components/DataGridCustomToolbar";
 
 const Transactions = () => {
@@ -35,30 +35,20 @@ const Transactions = () => {
       flex: 1,
     },
     {
-      field: "createdAt",
-      headerName: "CreatedAt",
+      field: "Carbon",
+      headerName: "Carbon",
       flex: 1,
-    },
-    {
-      field: "products",
-      headerName: "# of Products",
-      flex: 0.5,
-      sortable: false,
-      renderCell: (params) => params.value.length,
-    },
-    {
-      field: "cost",
-      headerName: "Cost",
-      flex: 1,
-      renderCell: (params) => `$${Number(params.value).toFixed(2)}`,
     },
   ];
 
   return (
     <Box m="1.5rem 2.5rem">
-      <Header title="CALCULATIONS" subtitle="Enter the data :-" />
+      <Header title="CARBON CALCULATOR" subtitle="Estimate your web page carbon footprint:" />
+      <Typography sx={{ mt: "1rem"}} variant="h5" component="h6">
+  Your Web page Address
+</Typography>
       <TextField
-          label="Enter Your URL"
+          label="Web page URL"
           sx={{ mb: "0.5rem", width: "15rem" }}
           onChange={(e) => setSearchInput(e.target.value)}
           value={searchInput}
@@ -76,7 +66,7 @@ const Transactions = () => {
          >Calculate</Button>
 
       <Box
-        height="80vh"
+        height="65vh"
         sx={{
           "& .MuiDataGrid-root": {
             border: "none",

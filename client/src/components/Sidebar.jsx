@@ -29,7 +29,7 @@ import profileImage from "assets/profile.jpeg";
 
 const navItems = [
   {
-    text: "Dashboard",
+    text: "Homepage",
     icon: <HomeOutlined />,
   },
   {
