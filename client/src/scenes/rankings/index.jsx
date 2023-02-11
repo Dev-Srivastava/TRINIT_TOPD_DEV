@@ -1,95 +1,33 @@
-import React from "react";
-import { Box, useTheme } from "@mui/material";
-import { useGetCustomersQuery } from "state/api";
-import Header from "components/Header";
-import { DataGrid } from "@mui/x-data-grid";
+import React, { useState, useEffect } from 'react';
+import data from './data.json';
 
-const Customers = () => {
-  const theme = useTheme();
-  const { data, isLoading } = useGetCustomersQuery();
-  console.log("data", data);
+const DummyDataTable = () => {
+  const [tableData, setTableData] = useState([]);
 
-  const columns = [
-    {
-      field: "_id",
-      headerName: "ID",
-      flex: 1,
-    },
-    {
-      field: "name",
-      headerName: "Name",
-      flex: 0.5,
-    },
-    {
-      field: "email",
-      headerName: "Email",
-      flex: 1,
-    },
-    {
-      field: "phoneNumber",
-      headerName: "Phone Number",
-      flex: 0.5,
-      renderCell: (params) => {
-        return params.value.replace(/^(\d{3})(\d{3})(\d{4})/, "($1)$2-$3");
-      },
-    },
-    {
-      field: "country",
-      headerName: "Country",
-      flex: 0.4,
-    },
-    {
-      field: "occupation",
-      headerName: "Occupation",
-      flex: 1,
-    },
-    {
-      field: "role",
-      headerName: "Role",
-      flex: 0.5,
-    },
-  ];
+  useEffect(() => {
+    setTableData(data);
+  }, []);
 
   return (
-    <Box m="1.5rem 2.5rem">
-      <Header title="Rankings" subtitle="Rankings of our Customers" />
-      <Box
-        mt="40px"
-        height="75vh"
-        sx={{
-          "& .MuiDataGrid-root": {
-            border: "none",
-          },
-          "& .MuiDataGrid-cell": {
-            borderBottom: "none",
-          },
-          "& .MuiDataGrid-columnHeaders": {
-            backgroundColor: theme.palette.background.alt,
-            color: theme.palette.secondary[100],
-            borderBottom: "none",
-          },
-          "& .MuiDataGrid-virtualScroller": {
-            backgroundColor: theme.palette.primary.light,
-          },
-          "& .MuiDataGrid-footerContainer": {
-            backgroundColor: theme.palette.background.alt,
-            color: theme.palette.secondary[100],
-            borderTop: "none",
-          },
-          "& .MuiDataGrid-toolbarContainer .MuiButton-text": {
-            color: `${theme.palette.secondary[200]} !important`,
-          },
-        }}
-      >
-        <DataGrid
-          loading={isLoading || !data}
-          getRowId={(row) => row._id}
-          rows={data || []}
-          columns={columns}
-        />
-      </Box>
-    </Box>
+    <table style={{ width: '100%', borderCollapse: 'collapse' }}>
+      <thead style={{ backgroundColor: '#f2f2f2' }}>
+        <tr>
+          <th style={{ border: '1px solid #ddd', padding: '8px' }}>Site URL</th>
+          <th style={{ border: '1px solid #ddd', padding: '8px' }}>Bytes</th>
+          <th style={{ border: '1px solid #ddd', padding: '8px' }}>Carbon</th>
+        </tr>
+      </thead>
+      <tbody>
+        {tableData.map(item => (
+          <tr key={item.url}>
+            <td style={{ border: '1px solid #ddd', padding: '8px' }}>{item.url}</td>
+            <td style={{ border: '1px solid #ddd', padding: '8px' }}>{item.bytes}</td>
+            <td style={{ border: '1px solid #ddd', padding: '8px' }}>{item.statistics.co2.grid.grams}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
   );
 };
 
-export default Customers;
+export default DummyDataTable;

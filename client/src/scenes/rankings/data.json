@@ -1,0 +1,464 @@
+[
+    {
+        "url": "https://www.youtube.com/",
+        "green": true,
+        "bytes": 3371646,
+        "cleanerThan": 0.34,
+        "statistics": {
+            "adjustedBytes": 2545592.73,
+            "energy": 0.0019203220599330964,
+            "co2": {
+                "grid": {
+                    "grams": 0.8487823504904286,
+                    "litres": 0.4720927433427763
+                },
+                "renewable": {
+                    "grams": 0.7358674133663627,
+                    "litres": 0.4092894553143709
+                }
+            }
+        },
+        "timestamp": 1676111766
+    },
+
+    {
+        "url": "https://twitter.com/",
+        "green": "unknown",
+        "bytes": 2908337,
+        "cleanerThan": 0.34,
+        "statistics": {
+            "adjustedBytes": 2195794.435,
+            "energy": 0.0016564442704897376,
+            "co2": {
+                "grid": {
+                    "grams": 0.732148367556464,
+                    "litres": 0.4072209220349052
+                },
+                "renewable": {
+                    "grams": 0.6347494444516675,
+                    "litres": 0.35304764100401737
+                }
+            }
+        },
+        "timestamp": 1676123491
+    },
+    
+      {
+        "url": "https://www.blogger.com/about/?bpli=1",
+        "green": true,
+        "bytes": 1918411,
+        "cleanerThan": 0.56,
+        "statistics": {
+            "adjustedBytes": 1448400.305,
+            "energy": 0.00109263159991242,
+            "co2": {
+                "grid": {
+                    "grams": 0.48294316716128965,
+                    "litres": 0.26861298957510926
+                },
+                "renewable": {
+                    "grams": 0.4186964290864394,
+                    "litres": 0.23287895385787755
+                }
+            }
+        },
+        "timestamp": 1676114802
+    },
+    
+    {
+        "url": "https://www.apple.com/",
+        "green": true,
+        "bytes": 7791058,
+        "cleanerThan": 0.13,
+        "statistics": {
+            "adjustedBytes": 5882248.79,
+            "energy": 0.004437399580981583,
+            "co2": {
+                "grid": {
+                    "grams": 1.9613306147938596,
+                    "litres": 1.0908920879483446
+                },
+                "renewable": {
+                    "grams": 1.7004115194321427,
+                    "litres": 0.9457688871081577
+                }
+            }
+        },
+        "timestamp": 1676115619
+    },
+    
+    {
+        "url": "https://www.microsoft.com/en-in/",
+        "green": true,
+        "bytes": 1160505,
+        "cleanerThan": 0.73,
+        "statistics": {
+            "adjustedBytes": 876181.275,
+            "energy": 0.0006609659946989269,
+            "co2": {
+                "grid": {
+                    "grams": 0.29214696965692566,
+                    "litres": 0.16249214452318203
+                },
+                "renewable": {
+                    "grams": 0.2532821691686288,
+                    "litres": 0.1408755424915913
+                }
+            }
+        },
+        "timestamp": 1676115689
+    },
+    
+    {
+        "url": "https://www.cloudflare.com/",
+        "green": true,
+        "bytes": 2619271,
+        "cleanerThan": 0.43,
+        "statistics": {
+            "adjustedBytes": 1977549.605,
+            "energy": 0.0014918066375423224,
+            "co2": {
+                "grid": {
+                    "grams": 0.6593785337937065,
+                    "litres": 0.3667463404960595
+                },
+                "renewable": {
+                    "grams": 0.571660303506218,
+                    "litres": 0.3179574608101584
+                }
+            }
+        },
+        "timestamp": 1676115782
+    },
+    
+    {
+        "url": "https://www.adobe.com/",
+        "green": true,
+        "bytes": 3600235,
+        "cleanerThan": 0.32,
+        "statistics": {
+            "adjustedBytes": 2718177.425,
+            "energy": 0.0020505149981472643,
+            "co2": {
+                "grid": {
+                    "grams": 0.9063276291810908,
+                    "litres": 0.5040994273505226
+                },
+                "renewable": {
+                    "grams": 0.7857573472900319,
+                    "litres": 0.4370382365627156
+                }
+            }
+        },
+        "timestamp": 1676115847
+    },
+    
+    {
+        "url": "https://www.whatsapp.com/",
+        "green": true,
+        "bytes": 2424203,
+        "cleanerThan": 0.46,
+        "statistics": {
+            "adjustedBytes": 1830273.265,
+            "energy": 0.0013807055956218393,
+            "co2": {
+                "grid": {
+                    "grams": 0.610271873264853,
+                    "litres": 0.33943321590991116
+                },
+                "renewable": {
+                    "grams": 0.5290863842422888,
+                    "litres": 0.29427784691556097
+                }
+            }
+        },
+        "timestamp": 1676115953
+    },
+    
+    {
+        "url": "https://github.com/",
+        "green": "unknown",
+        "bytes": 1351667,
+        "cleanerThan": 0.63,
+        "statistics": {
+            "adjustedBytes": 1020508.585,
+            "energy": 0.0007698423730675132,
+            "co2": {
+                "grid": {
+                    "grams": 0.3402703288958408,
+                    "litres": 0.18925835693186663
+                },
+                "renewable": {
+                    "grams": 0.29500359735947107,
+                    "litres": 0.16408100085133778
+                }
+            }
+        },
+        "timestamp": 1676119683
+    },
+    
+    {
+        "url": "https://www.facebook.com/",
+        "green": true,
+        "bytes": 451997,
+        "cleanerThan": 0.9,
+        "statistics": {
+            "adjustedBytes": 341257.735,
+            "energy": 0.0002574350362177938,
+            "co2": {
+                "grid": {
+                    "grams": 0.11378628600826488,
+                    "litres": 0.06328793227779692
+                },
+                "renewable": {
+                    "grams": 0.0986491058786586,
+                    "litres": 0.05486863268970991
+                }
+            }
+        },
+        "timestamp": 1676121858
+    },
+    
+    {
+        "url": "https://www.msn.com/en-in",
+        "green": true,
+        "bytes": 3346438,
+        "cleanerThan": 0.35,
+        "statistics": {
+            "adjustedBytes": 2526560.69,
+            "energy": 0.0019059648354537786,
+            "co2": {
+                "grid": {
+                    "grams": 0.8424364572705701,
+                    "litres": 0.46856315753389105
+                },
+                "renewable": {
+                    "grams": 0.7303657249458881,
+                    "litres": 0.4062294162149029
+                }
+            }
+        },
+        "timestamp": 1676122046
+    },
+    
+    {
+        "url": "https://www.amazon.com/",
+        "green": true,
+        "bytes": 4803895,
+        "cleanerThan": 0.24,
+        "statistics": {
+            "adjustedBytes": 3626940.725,
+            "energy": 0.0027360599369276317,
+            "co2": {
+                "grid": {
+                    "grams": 1.2093384921220132,
+                    "litres": 0.6726340693182636
+                },
+                "renewable": {
+                    "grams": 1.0484581678306688,
+                    "litres": 0.5831524329474179
+                }
+            }
+        },
+        "timestamp": 1676122220
+    },
+    
+    {
+        "url": "https://www.pinterest.com/",
+        "green": true,
+        "bytes": 15100416,
+        "cleanerThan": 0.05,
+        "statistics": {
+            "adjustedBytes": 11400814.08,
+            "energy": 0.00860044677257538,
+            "co2": {
+                "grid": {
+                    "grams": 3.801397473478318,
+                    "litres": 2.11433727474864
+                },
+                "renewable": {
+                    "grams": 3.295691203250886,
+                    "litres": 1.8330634472481424
+                }
+            }
+        },
+        "timestamp": 1676122549
+    },
+    
+    {
+        "url": "https://www.bing.com/",
+        "green": true,
+        "bytes": 2994907,
+        "cleanerThan": 0.39,
+        "statistics": {
+            "adjustedBytes": 2261154.785,
+            "energy": 0.0017057502417359503,
+            "co2": {
+                "grid": {
+                    "grams": 0.7539416068472901,
+                    "litres": 0.41934232172846264
+                },
+                "renewable": {
+                    "grams": 0.6536434926332162,
+                    "litres": 0.36355651060259475
+                }
+            }
+        },
+        "timestamp": 1676123261
+    },
+    
+    {
+        "url": "https://www.wired.com/",
+        "green": true,
+        "bytes": 10320508,
+        "cleanerThan": 0.09,
+        "statistics": {
+            "adjustedBytes": 7791983.54,
+            "energy": 0.005878048639185727,
+            "co2": {
+                "grid": {
+                    "grams": 2.5980974985200915,
+                    "litres": 1.4450618286768746
+                },
+                "renewable": {
+                    "grams": 2.252468238535971,
+                    "litres": 1.2528228342737067
+                }
+            }
+        },
+        "timestamp": 1676123356
+    },
+    
+    {
+        "url": "https://www.google.com/",
+        "green": true,
+        "bytes": 837615,
+        "cleanerThan": 0.82,
+        "statistics": {
+            "adjustedBytes": 632399.325,
+            "energy": 0.0004770638917107135,
+            "co2": {
+                "grid": {
+                    "grams": 0.2108622401361354,
+                    "litres": 0.11728157796371848
+                },
+                "renewable": {
+                    "grams": 0.18281088330354545,
+                    "litres": 0.10167941329343196
+                }
+            }
+        },
+        "timestamp": 1676111505
+    },
+    
+    {
+        "url": "https://hashnode.com/",
+        "green": "unknown",
+        "bytes": 1988912,
+        "cleanerThan": 0.48,
+        "statistics": {
+            "adjustedBytes": 1501628.56,
+            "energy": 0.0011327854670584202,
+            "co2": {
+                "grid": {
+                    "grams": 0.5006911764398218,
+                    "litres": 0.2784844323358288
+                },
+                "renewable": {
+                    "grams": 0.4340833909767866,
+                    "litres": 0.24143718206128867
+                }
+            }
+        },
+        "timestamp": 1676123685
+    },
+    
+    {
+        "url": "https://www.udemy.com/",
+        "green": true,
+        "bytes": 2036492,
+        "cleanerThan": 0.53,
+        "statistics": {
+            "adjustedBytes": 1537551.46,
+            "energy": 0.0011598846713081002,
+            "co2": {
+                "grid": {
+                    "grams": 0.5126690247181803,
+                    "litres": 0.2851465115482518
+                },
+                "renewable": {
+                    "grams": 0.44446780604526404,
+                    "litres": 0.24721299372237582
+                }
+            }
+        },
+        "timestamp": 1676125360
+    },
+    
+    {
+        "url": "https://www.eventbrite.com/",
+        "green": "unknown",
+        "bytes": 2864815,
+        "cleanerThan": 0.35,
+        "statistics": {
+            "adjustedBytes": 2162935.325,
+            "energy": 0.0016316563014406712,
+            "co2": {
+                "grid": {
+                    "grams": 0.7211920852367767,
+                    "litres": 0.40112703780869513
+                },
+                "renewable": {
+                    "grams": 0.6252506947120653,
+                    "litres": 0.34776443639885063
+                }
+            }
+        },
+        "timestamp": 1676125488
+    },
+    
+    {
+        "url": "https://www.fiverr.com/",
+        "green": true,
+        "bytes": 1895031,
+        "cleanerThan": 0.57,
+        "statistics": {
+            "adjustedBytes": 1430748.405,
+            "energy": 0.0010793155134189874,
+            "co2": {
+                "grid": {
+                    "grams": 0.47705745693119245,
+                    "litres": 0.26533935754512916
+                },
+                "renewable": {
+                    "grams": 0.41359370474215595,
+                    "litres": 0.2300408185775871
+                }
+            }
+        },
+        "timestamp": 1676125594
+    },
+    
+    {
+        "url": "https://www.instagram.com/",
+        "green": true,
+        "bytes": 2366127,
+        "cleanerThan": 0.47,
+        "statistics": {
+            "adjustedBytes": 1786425.885,
+            "energy": 0.0013476283912081273,
+            "co2": {
+                "grid": {
+                    "grams": 0.5956517489139923,
+                    "litres": 0.3313015027459625
+                },
+                "renewable": {
+                    "grams": 0.5164111995109544,
+                    "litres": 0.2872279091679928
+                }
+            }
+        },
+        "timestamp": 1676125736
+    }
+  ]
+  
