@@ -17,9 +17,10 @@ import {
   ChevronLeft,
   ChevronRightOutlined,
   HomeOutlined,
-  ShoppingCartOutlined,
   Groups2Outlined,
+  ReceiptLongOutlined,
   AdminPanelSettingsOutlined,
+  TrendingUpOutlined,
 } from "@mui/icons-material";
 import { useEffect, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
@@ -28,7 +29,7 @@ import profileImage from "assets/profile.jpeg";
 
 const navItems = [
   {
-    text: "HomePage",
+    text: "Dashboard",
     icon: <HomeOutlined />,
   },
   {
@@ -37,22 +38,20 @@ const navItems = [
   },
   {
     text: "Rankings",
-    icon: <ShoppingCartOutlined />,
+    icon: <Groups2Outlined />,
   },
   {
     text: "Calculate",
-    icon: <Groups2Outlined />,
+    icon: <ReceiptLongOutlined />,
   },
-
   {
-    text: "Team TopD",
+    text: "Team TOP-D",
     icon: null,
   },
   {
     text: "About",
     icon: <AdminPanelSettingsOutlined />,
   },
-
 ];
 
 const Sidebar = ({
