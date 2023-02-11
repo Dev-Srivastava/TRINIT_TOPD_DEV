@@ -3,6 +3,7 @@ import { Box, useTheme } from "@mui/material";
 import { DataGrid } from "@mui/x-data-grid";
 import { useGetTransactionsQuery } from "state/api";
 import Header from "components/Header";
+import { Button, TextField, InputAdornment } from "@mui/material";
 import DataGridCustomToolbar from "components/DataGridCustomToolbar";
 
 const Transactions = () => {
@@ -55,7 +56,25 @@ const Transactions = () => {
 
   return (
     <Box m="1.5rem 2.5rem">
-      <Header title="TRANSACTIONS" subtitle="Entire list of transactions" />
+      <Header title="CALCULATIONS" subtitle="Enter the data :-" />
+      <TextField
+          label="Enter Your URL"
+          sx={{ mb: "0.5rem", width: "15rem" }}
+          onChange={(e) => setSearchInput(e.target.value)}
+          value={searchInput}
+          variant="standard"
+          InputProps={{
+            endAdornment: (
+              <InputAdornment position="end">
+              </InputAdornment>
+            ),
+          }}
+          
+        />
+         <Button variant="contained"
+         sx={{ mt: "1rem",ml: "1rem" }}
+         >Calculate</Button>
+
       <Box
         height="80vh"
         sx={{
