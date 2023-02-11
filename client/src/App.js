@@ -20,7 +20,7 @@ function App() {
           <CssBaseline />
           <Routes>
             <Route element={<Layout />}>
-              <Route path="/" element={<Navigate to="/dashboard" replace />} />
+              <Route path="/" element={<Navigate to="/homepage" replace />} />
               <Route path="/homepage" element={<Homepage />} />
               <Route path="/rankings" element={<Rankings />} />
               <Route path="/calculate" element={<Calculate />} />
