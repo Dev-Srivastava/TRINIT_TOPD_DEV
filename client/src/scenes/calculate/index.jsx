@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
-
+import {
+  Typography,
+} from "@mui/material";
 const CarbonEmission = () => {
   const [url, setUrl] = useState('');
   const [emission, setEmission] = useState(0);
@@ -20,8 +22,10 @@ const CarbonEmission = () => {
   };
 
   return (
-    <div>
-      <h2>Calculate Carbon Footprint</h2>
+    <div style={{textAlign:'center'}} >
+      <Typography sx={{ textAlign: 'center',fontWeight: 'bold',mb:'1rem' }} variant="h1" component="h2">
+  Calculate Carbon Footprint
+</Typography>
       <label htmlFor="url">
         URL:
         <input

@@ -6,17 +6,12 @@ async function getWebsiteData() {
   });
 
   const url = await getCurrentTab();
-  if (!url) {
-    document.querySelector('#bytes').innerHTML = 'Error';
-    document.querySelector('#carbon').innerHTML = 'Error';
-    return;
-  }
   const apiEndpoint = `https://api.websitecarbon.com/site?url=www.instagram.com`;
   try {
     const response = await fetch(apiEndpoint);
     const data = await response.json();
     document.querySelector('#bytes').innerHTML = data.bytes + ' B';
-    document.querySelector('#carbon').innerHTML = data.carbon + ' gCO2';
+    document.querySelector('#carbon').innerHTML = data.statistics.co2.grid.grams + ' gCO2';
     // console.log(apiEndpoint);
   } catch (error) {
     console.error(error);
